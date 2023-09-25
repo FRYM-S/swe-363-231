@@ -9,22 +9,41 @@ body {
     background:rgb(62, 122, 107);
   }
 
-nav a {
+/* nav a {
     color: aquamarine;
 
-}
+} */
 
-a{
+/* a{
     cursor: pointer;
     color: antiquewhite;
-}
+} */
 
 p::first-letter{
     font-size :x-large;
  }
 
-nav li {
+nav {
+    position: sticky;
+    top: 150px;
+}
+nav img {
+    width: 16px;
+}
+
+nav li{
     display: inline;
+}
+
+nav a {
+    color :hsl(225, 14%, 22%)
+}
+nav:hover a{
+    color:rgb(24, 138, 112)
+}
+
+nav ui li:nth-child(1){
+    transition: color 1s;
 }
 
 nav li:first-child:hover {
@@ -44,10 +63,11 @@ h2 {
     font-size: 3em;
     font-weight: 600;
     text-transform: capitalize;
+    color: rgb(0, 217, 255);
 }
 
 tr:nth-child(odd) {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(19, 145, 137);
 }
 
 thead {
@@ -55,16 +75,20 @@ thead {
 }
 
 .top {
-    background-color: rgb(109, 46, 168);
+    background-color: rgb(5, 216, 167);
 }
 
 em{
-    background-color: rgb(47, 83, 101);
+    background-color: rgb(66, 100, 117);
 }
 
 #the_most_important {
     background-color: rgb(117, 107, 51);
     text-transform: uppercase
+}
+
+td {
+    transition: background-color 1s;
 }
 
 td:hover {
