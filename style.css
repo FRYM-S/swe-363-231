@@ -42,15 +42,14 @@ nav:hover a{
     color:rgb(24, 138, 112)
 }
 
-nav ui li:nth-child(1){
-    transition: color 1s;
+nav ul li a{
+    transition: color 1s .5s;
 }
 
 nav li:first-child:hover {
     text-decoration: underline;
     border-bottom: 3px solid black;
 }
-
 
 nav ul {
     font-family: sans-serif;
@@ -105,4 +104,11 @@ input[type=text]{
 
 input[placeholder=massage]{
     height: 50px;
+}
+
+button{
+    transition: background-color 1s;
+}
+button:hover {
+    background-color: antiquewhite;
 }
