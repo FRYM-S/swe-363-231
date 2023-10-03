@@ -112,3 +112,10 @@ button{
 button:hover {
     background-color: antiquewhite;
 }
+
+footer {
+    position: fixed;
+    right: 2vw;
+    top: 50vh;
+    rotate: 90deg;
+}
