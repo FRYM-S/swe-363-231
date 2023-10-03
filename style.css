@@ -2,7 +2,7 @@ body {
     background-color: hsl(225, 14%, 22%);
     color: rgb(222, 221, 215);
     font-family: 'tajawal', sans-serif;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 ::selection {
@@ -18,17 +18,22 @@ body {
     cursor: pointer;
     color: antiquewhite;
 } */
-
+img{
+    position: fixed;
+    opacity: 30%;
+    width: auto;
+}
 p::first-letter{
     font-size :x-large;
  }
-
+/* 
 nav {
-    position: sticky;
-    top: 150px;
-}
+    position: relative;
+    top: 10px;
+} */
 nav img {
-    width: 16px;
+    width: 30px;
+
 }
 
 nav li{
@@ -65,6 +70,25 @@ h2 {
     color: rgb(0, 217, 255);
 }
 
+#home{
+    box-sizing: content-box;
+    width: 100%;
+    border: 2px solid ;
+    padding:  25vh;
+}
+#service{
+    box-sizing: content-box;
+    width: 100%;
+    border: 2px solid ;
+    padding:  25vh;
+}
+
+table {
+    text-align: center;
+    width: 50vw;
+    height: 50vh;
+}
+
 tr:nth-child(odd) {
     background-color: rgb(19, 145, 137);
 }
@@ -74,7 +98,7 @@ thead {
 }
 
 .top {
-    background-color: rgb(5, 216, 167);
+    background-color: rgb(16, 175, 138);
 }
 
 em{
@@ -87,7 +111,7 @@ em{
 }
 
 td {
-    transition: background-color 1s;
+    transition: background-color 0.5s;
 }
 
 td:hover {
