@@ -1,4 +1,3 @@
-// Sample data representing navigation items
 const navItems = [
     { text: 'Home', link: '#' },
     { text: 'Services', link: '#' },
@@ -7,7 +6,6 @@ const navItems = [
     { text: 'About Me', link: '#' },
   ];
   
-  // Function to dynamically create and add <li> elements to the navigation list
   function addNavItems() {
     const navList = document.querySelector('nav ul');
   
@@ -23,6 +21,21 @@ const navItems = [
     });
   }
   
-  // Call the function to add navigation items when the page loads
   document.addEventListener('DOMContentLoaded', addNavItems);
+
   
+
+document.addEventListener('DOMContentLoaded', function () {
+    alert("you can use arrow keys to scrole :)")
+
+    window.addEventListener('keydown', (event) => {
+        switch (event.key) {
+            case 'ArrowUp':
+                window.scrollBy(0, -50);
+                break;
+            case 'ArrowDown':
+                window.scrollBy(0, 50);
+                break;
+        }
+    });
+});
